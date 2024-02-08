@@ -231,10 +231,16 @@
         }
     }
     function handleCharacteristicChange3(event){
+        if(isUpdating) {
+            retrievedCarCountValue.innerHTML = 0;
+            return;
+        }
+        else{
         const newValueReceived = new TextDecoder().decode(event.target.value);
         console.log("Car Count Characteristic value changed: ", newValueReceived);
         retrievedCarCountValue.innerHTML = newValueReceived;
         timestampContainers[2].innerHTML = getDateTime();
+        }
     }
 
     function writeOnCharacteristic(value){
