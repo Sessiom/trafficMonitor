@@ -5,5 +5,6 @@ It builds off of Random Nerd Tutorials'
 by adding additional characteristics.
 It is part of my teams Senior Design Project in which we are building two
 street signs for single-lane roadside construction that communicate which each other much like
-traffic flaggers.
+traffic flaggers. You can also check out [trafficMonitor2](github.io/sessiom/trafficMonitor2) which is a full stack 
+vue app that saves the data from each traffic session to mongoDB.
 
